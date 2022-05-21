@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import "./styles/App.css"
 
-import UnderConstruction from '../containers/UnderConstruction'
+import Home from '../containers/Home'
 
 import Layout from '../components/Layout'
 
@@ -12,7 +12,7 @@ const App = () => {
     <Router>
         <Layout>
             <Routes>
-                <Route path="/" element={<UnderConstruction/>} />
+                <Route path="/" element={<Home/>} />
                 <Route path="*" element={<h1>Not found</h1>}/>
             </Routes>
         </Layout>
