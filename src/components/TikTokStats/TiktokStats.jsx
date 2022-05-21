@@ -1,5 +1,5 @@
 import React from 'react'
-import Spinner from './Spinner'
+import Spinner from '../Spinner'
 
 const TiktokStats = () => {
   const [tiktokStats,setTiktokStats] = React.useState('loading')
@@ -22,7 +22,7 @@ const TiktokStats = () => {
     <>
     {tiktokStats==='loading' ? 
       
-      <div className='tiktokStats-container'>
+      <section className='tiktokStats-container'>
 
         <div>
           <Spinner/>
@@ -39,12 +39,12 @@ const TiktokStats = () => {
           <p>Videos</p>
         </div>
       
-      </div>
+      </section>
       
       
       : 
 
-      <div className='tiktokStats-container'>
+      <section className='tiktokStats-container'>
 
         <div>
           <h2>{tiktokStats.followers}</h2>
@@ -61,7 +61,7 @@ const TiktokStats = () => {
           <p>Videos</p>
         </div>
       
-      </div>
+      </section>
       }
     </>
   )

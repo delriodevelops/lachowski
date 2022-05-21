@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
     
@@ -10,8 +10,36 @@ body {
 
     text-align: center;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
     background: #151314;
     color: #fff;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+
+    scroll-snap-align: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    scroll-snap-type: x mandatory;
+
+}
+
+.side-section {
+    scroll-snap-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./styles/Bio.css"
-import TiktokStats from './TiktokStats'
-import InstaStats from './InstaStats'
+import InstaStats from './InstaStats/Index'
+import TiktokStats from './TikTokStats/TiktokStats'
 
 const Bio = () => {
 

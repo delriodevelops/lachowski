@@ -1,6 +1,8 @@
 import React from 'react'
-import Spinner from './Spinner'
-import pfp from './img/Insta/pfp.PNG'
+import Spinner from '../Spinner'
+import './style.css'
+import pfp from '../img/Insta/pfp.PNG'
+
 
 const InstaStats = () => {
     const [instaStats,setInstaStats] = React.useState('loading')
@@ -22,8 +24,8 @@ const InstaStats = () => {
       },[])
   return (
     <>
-        <div className="intaMediaKit">
-            <div className="mediakit-insta-col1">
+        <section className="instaMediaKit" id='instaMediaKit'>
+            <section className="mediakit-insta-col1 side-section" id='insta-princ'>
                 <img className='mediakit-insta-pfp' src={pfp} width="300px" alt="Lachowski" title='Lachowski' />
                 <h3>@lachowski_tutorials</h3>
 
@@ -56,9 +58,11 @@ const InstaStats = () => {
                     <p>Tasa media de engagment</p>
                 </div>
 
-            </div>
+                <a href="#insta-sec">Mas datos</a>
 
-            <div className="mediakit-insta-col2">
+            </section>
+
+            <section className="mediakit-insta-col2 side-section" id='insta-sec'>
                 <h3>Audiencia Instagram</h3>
 
                 <div className="mediakit-insta-genero">
@@ -89,8 +93,10 @@ const InstaStats = () => {
                     </ul>
                     <a href="/collabs">Anteriores colaboraciones</a>
                 </div>
-            </div>
-        </div>
+
+                <a href="#insta-princ">Volver</a>
+            </section>
+        </section>
     </>
   )
 }
