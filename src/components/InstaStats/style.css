@@ -5,3 +5,29 @@
     height: 100vh;
     place-items: center;
 }
+
+#insta-link {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px;
+    place-items: center;
+}
+#insta-link svg {
+    height: 24px;
+    width: 24px;
+}
+.mediakit-insta-pfp{
+    border-radius: 16px;
+}
+
+.insta-slider-btn {
+    background: rgba(0, 0, 0, 0.33);
+    border: solid 2px rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);
+    padding: 12px 36px;
+    border-radius: 8px;
+}
+
+.mediakit-insta-pfp:hover {
+    transform:rotate3d(0,0,0,180deg);
+}

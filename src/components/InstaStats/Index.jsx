@@ -3,6 +3,8 @@ import Spinner from '../Spinner'
 import './style.css'
 import pfp from '../img/Insta/pfp.PNG'
 
+import { FaInstagram } from "react-icons/fa";
+
 
 const InstaStats = () => {
     const [instaStats,setInstaStats] = React.useState('loading')
@@ -27,14 +29,14 @@ const InstaStats = () => {
         <section className="MediaKit" id='instaMediaKit'>
             <section className="mediakit-insta-col1 side-section" id='insta-princ'>
                 <img className='mediakit-insta-pfp' src={pfp} width="300px" alt="Lachowski" title='Lachowski' />
-                <h3>@lachowski_tutorials</h3>
+                <a id='insta-link' rel="noreferrer" href="https://www.instagram.com/lachowski_tutorials/" target='_blank'><FaInstagram/><h3>lachowski_tutorials</h3></a>
 
                 {instaStats==='loading' ? 
 
                     <div className='mediakit-insta-seguidores'>
 
                       <div>
-                        <Spinner/>
+                        <Spinner alt='102.6K'/>
                         <p>Seguidores</p>
                       </div>
 
@@ -54,11 +56,11 @@ const InstaStats = () => {
                 }
 
                 <div>
-                    <h2>13%</h2>
-                    <p>Tasa media de engagment</p>
+                    <h2>7.47%</h2>
+                    <p>Tasa media de engagement</p>
                 </div>
 
-                <a href="#insta-sec">Mas datos</a>
+                <a href="#insta-sec" className='insta-slider-btn'>Mas datos</a>
 
             </section>
 
@@ -94,7 +96,7 @@ const InstaStats = () => {
                     <a href="/collabs">Anteriores colaboraciones</a>
                 </div>
 
-                <a href="#insta-princ">Volver</a>
+                <a href="#insta-princ" className='insta-slider-btn'>Volver</a>
             </section>
         </section>
     </>

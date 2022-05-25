@@ -15,12 +15,14 @@ body {
     background: #151314;
     color: #fff;
 
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
+
 }
 
 
@@ -44,7 +46,10 @@ html {
     overflow-x: auto;
     scroll-snap-align: center;
     scroll-behavior: smooth;
+
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
 section {
 
     
@@ -57,4 +62,9 @@ section {
     scroll-snap-align: center;
     scroll-snap-type: x mandatory;
 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

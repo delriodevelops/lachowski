@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Spinner = () => {
+const Spinner = ({alt}) => {
   return (
     <>
-    <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
+      {!alt  ? <div className="lds-ring"><div></div><div></div><div></div><div></div></div> : <h2>{alt}</h2>}
     </>
   )
 }
