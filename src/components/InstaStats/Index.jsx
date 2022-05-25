@@ -24,7 +24,7 @@ const InstaStats = () => {
       },[])
   return (
     <>
-        <section className="instaMediaKit" id='instaMediaKit'>
+        <section className="MediaKit" id='instaMediaKit'>
             <section className="mediakit-insta-col1 side-section" id='insta-princ'>
                 <img className='mediakit-insta-pfp' src={pfp} width="300px" alt="Lachowski" title='Lachowski' />
                 <h3>@lachowski_tutorials</h3>

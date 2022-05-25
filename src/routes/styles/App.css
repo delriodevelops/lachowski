@@ -20,21 +20,9 @@ body {
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
-section {
-
-    scroll-snap-align: center;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: grid;
-    place-items: center;
-
-    scroll-snap-type: x mandatory;
-
-}
 
 .side-section {
     scroll-snap-align: center;
@@ -42,4 +30,31 @@ section {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+#bio {
+    scroll-snap-type: y mandatory;
+}
+
+#bio section {
+    scroll-snap-align: center;
+}
+
+#instaMediaKit{
+    overflow-x: auto;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+}
+section {
+
+    
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    place-items: center;
+    
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+
 }

@@ -19,7 +19,7 @@ const TiktokStats = () => {
   },[])
 
   return (
-    <>
+    <section className="MediaKit" id='tiktokMediaKit'>
     {tiktokStats==='loading' ? 
       
       <section className='tiktokStats-container'>
@@ -63,7 +63,7 @@ const TiktokStats = () => {
       
       </section>
       }
-    </>
+    </section>
   )
 }
 
