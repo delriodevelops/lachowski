@@ -57,7 +57,7 @@ const InstaStats = () => {
 
                 <div>
                     <h2>7.47%</h2>
-                    <p>Tasa media de engagement</p>
+                    <p>Engagement</p>
                 </div>
 
                 <a href="#insta-sec" className='insta-slider-btn'>Mas datos</a>
@@ -65,23 +65,27 @@ const InstaStats = () => {
             </section>
 
             <section className="mediakit-insta-col2 side-section" id='insta-sec'>
-                <h3>Audiencia Instagram</h3>
+                <h3 id="mediakit-insta-audiencia">Audiencia Instagram</h3>
 
-                <div className="mediakit-insta-genero">
-                    <h3>94%</h3>
-                    <p>mujeres</p>
+                <div className="mediakit-insta-genero glassy">
+                    <h2>99%</h2>
+                    <p>Mujeres</p>
                 </div>
 
-                <div className="mediakit-insta-edad">
-                    <h3>18-25</h3>
-                    <p>años</p>
+                <div className="mediakit-insta-edad glassy">
+                    <h2>18-25</h2>
+                    <p>Años</p>
                 </div>
 
-                <div className="mediakit-insta-geo">
-                    <h3>35%</h3>
+                <div className="mediakit-insta-geo glassy">
                     <p>México</p>
-                    <h3>20%</h3>
+                    <h3>29,2%</h3>
+                    <p>Argentina</p>
+                    <h3>14,2%</h3>
                     <p>Colombia</p>
+                    <h3>12,2%</h3>
+                    <p>Chile</p>
+                    <h3>11,7%</h3>
                 </div>
 
                 <div className="mediakit-insta-collabs">
@@ -93,10 +97,10 @@ const InstaStats = () => {
                         <li>Wine Gloss</li>
                         <li>Arenal Sound</li>
                     </ul>
-                    <a href="/collabs">Anteriores colaboraciones</a>
+                    <a href="/collabs" id="insta-colabos-btn">Anteriores colaboraciones</a>
                 </div>
 
-                <a href="#insta-princ" className='insta-slider-btn'>Volver</a>
+                <a href="#insta-princ" id='insta-slider-back' className='insta-slider-btn'>Volver</a>
             </section>
         </section>
     </>
