@@ -1,5 +1,8 @@
 import React from 'react'
-import Spinner from '../Spinner'
+import Spinner from './Spinner'
+import pfp from './img/tok/pfp.jpeg'
+
+import './styles/tiktokstats.css'
 
 const TiktokStats = () => {
   const [tiktokStats,setTiktokStats] = React.useState('loading')
@@ -20,31 +23,29 @@ const TiktokStats = () => {
 
   return (
     <section className="MediaKit" id='tiktokMediaKit'>
+      <section className='tiktokStats-container' id='tokstats-col1'>
+      <img src={pfp} alt="Foto de perfil" title='Lachowski' id='tiktok-media-pfp'/>
     {tiktokStats==='loading' ? 
       
-      <section className='tiktokStats-container'>
-
+      
+        <>
         <div>
-          <Spinner/>
+          <Spinner alt="811.8k"/>
           <p>Seguidores</p>
         </div>
         
         <div>
-          <Spinner/>
-          <p>Likes</p>
+          <Spinner alt='13.85%'/>
+          <p>Engagement</p>
         </div>
-    
-        <div>
-          <Spinner/>
-          <p>Videos</p>
-        </div>
+        </>
       
-      </section>
+      
       
       
       : 
 
-      <section className='tiktokStats-container'>
+      <>
 
         <div>
           <h2>{tiktokStats.followers}</h2>
@@ -61,8 +62,17 @@ const TiktokStats = () => {
           <p>Videos</p>
         </div>
       
-      </section>
+        </>
       }
+      <a href="#tokstats-col2" className='insta-slider-btn'>Más datos</a>
+    </section>
+
+    <section className='tiktokStats-container' id='tokstats-col2'>
+      <div className='tok-gender'>
+        <h3>97.8%</h3>
+        <p>Mujeres</p>
+      </div>
+    </section>
     </section>
   )
 }

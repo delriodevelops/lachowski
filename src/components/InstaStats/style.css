@@ -18,7 +18,6 @@
 }
 .mediakit-insta-pfp{
     border-radius: 16px;
-    transition: transform .3s ease-out;
 }
 
 .insta-slider-btn, #insta-colabos-btn {
@@ -41,12 +40,21 @@
 
 .mediakit-insta-collabs {
     grid-column: 1 / 3;
+    display: grid;
 }
 .mediakit-insta-collabs ul {
-    text-align: left;
+    text-align: center;
+    padding: 0px;
+    list-style: none;
 }
 .mediakit-insta-collabs ul li {
-    margin: 4px 0;
+    padding: 2px;
+}
+
+.mediakit-insta-collabs h4 {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -55,12 +63,8 @@
 }
 
 
-#insta-colabos-btn {
-    margin-top: 0px;
-    padding: 8px 36px;
-}
 
-.mediakit-insta-geo {
+.mediakit-insta-geo, .mediakit-insta-edad {
     display: grid;
     place-items: center;
     justify-items: start;
@@ -68,11 +72,22 @@
     grid-template-columns: 1fr 1fr;
 }
 
-
 .glassy {
     background: rgba(255, 255, 255, .23);
     border: solid 2px rgba(255, 255, 255, .3);
+    backdrop-filter: blur(8px);
     border-radius: 16px;
     padding: 6px 12px;
-    width: 128px;
+}
+
+.mediakit-insta-edad {
+    padding: 6px 40px;
+}
+
+#insta-colabos-btn {
+    background: rgba(255, 255, 255, .23);
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    padding: 12px 12px;
+    border: none;
 }

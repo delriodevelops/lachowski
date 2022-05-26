@@ -1,0 +1,13 @@
+#tiktokMediaKit {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100vw 100vw;
+    overflow-x: scroll;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+#tiktok-media-pfp {
+    width: 300px;
+    border-radius: 50%;
+}
