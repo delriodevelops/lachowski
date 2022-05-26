@@ -9,10 +9,10 @@ const Bio = () => {
 
 
   return (
-    <>
+    <div className='bio'>
       <TiktokStats/>
       <InstaStats/>
-    </>
+    </div>
     )
 }
 

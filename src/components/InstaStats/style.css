@@ -1,7 +1,0 @@
-.instaMediaKit {
-    display: grid;
-    grid-template-columns: 100vw 100vw;
-    width: 100vw;
-    height: 100vh;
-    place-items: center;
-}

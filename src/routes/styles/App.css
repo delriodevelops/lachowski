@@ -18,13 +18,15 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
 }
 
-section {
 
+section {
     scroll-snap-align: center;
+
 
     width: 100vw;
     height: 100vh;
@@ -32,9 +34,18 @@ section {
     display: grid;
     place-items: center;
 
-    scroll-snap-type: x mandatory;
 
 }
+
+* {
+    scroll-behavior: smooth;
+
+}
+.scrolleable{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  
+  }
 
 .side-section {
     scroll-snap-align: center;
@@ -43,3 +54,18 @@ section {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.bio{
+    overflow-x: hidden; 
+    scroll-snap-type: y mandatory;
+}
+
+.instaMediaKit {
+    display: grid;
+    grid-template-columns: 100vw 100vw;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+}
+
