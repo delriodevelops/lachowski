@@ -3,6 +3,8 @@ import Spinner from '../Spinner'
 import './style.css'
 import pfp from '../img/Insta/pfp.PNG'
 
+import { FaInstagram } from "react-icons/fa";
+
 
 const InstaStats = () => {
     const [instaStats,setInstaStats] = React.useState('loading')
@@ -24,17 +26,17 @@ const InstaStats = () => {
       },[])
   return (
     <>
-        <section className="instaMediaKit scrolleable" id='instaMediaKit'>
+        <section className="MediaKit" id='instaMediaKit'>
             <section className="mediakit-insta-col1 side-section" id='insta-princ'>
                 <img className='mediakit-insta-pfp' src={pfp} width="300px" alt="Lachowski" title='Lachowski' />
-                <h3>@lachowski_tutorials</h3>
+                <a id='insta-link' rel="noreferrer" href="https://www.instagram.com/lachowski_tutorials/" target='_blank'><FaInstagram/><h3>lachowski_tutorials</h3></a>
 
                 {instaStats==='loading' ? 
 
                     <div className='mediakit-insta-seguidores'>
 
                       <div>
-                        <Spinner/>
+                        <Spinner alt='102.6K'/>
                         <p>Seguidores</p>
                       </div>
 
@@ -54,32 +56,47 @@ const InstaStats = () => {
                 }
 
                 <div>
-                    <h2>13%</h2>
-                    <p>Tasa media de engagment</p>
+                    <h2>7.47%</h2>
+                    <p>Engagement</p>
                 </div>
 
-                <a href="#insta-sec">Mas datos</a>
+                <a href="#insta-sec" className='insta-slider-btn'>Más datos</a>
 
             </section>
 
             <section className="mediakit-insta-col2 side-section" id='insta-sec'>
-                <h3>Audiencia Instagram</h3>
+                <h3 id="mediakit-insta-audiencia">Audiencia Instagram</h3>
 
                 <div className="mediakit-insta-genero">
-                    <h3>94%</h3>
-                    <p>mujeres</p>
+                    <h2>99%</h2>
+                    <p>Mujeres</p>
+                </div>
+                
+                <div>
+                    <h2>120,9k</h2>
+                    <p>Alcance</p>
                 </div>
 
-                <div className="mediakit-insta-edad">
-                    <h3>18-25</h3>
-                    <p>años</p>
+                <div className="mediakit-insta-edad glassy">
+                    <p>18-24</p>
+                    <h4>65,2%</h4>
+                    <p>25-34</p>
+                    <h4>18%</h4>
+                    <p>14-17</p>
+                    <h4>13,7%</h4>
+                    <p>35-44</p>
+                    <h4>1,9%</h4>
                 </div>
 
-                <div className="mediakit-insta-geo">
-                    <h3>35%</h3>
+                <div className="mediakit-insta-geo glassy">
                     <p>México</p>
-                    <h3>20%</h3>
+                    <h4>29,2%</h4>
+                    <p>Argentina</p>
+                    <h4>14,2%</h4>
                     <p>Colombia</p>
+                    <h4>12,2%</h4>
+                    <p>Chile</p>
+                    <h4>11,7%</h4>
                 </div>
 
                 <div className="mediakit-insta-collabs">
@@ -91,10 +108,10 @@ const InstaStats = () => {
                         <li>Wine Gloss</li>
                         <li>Arenal Sound</li>
                     </ul>
-                    <a href="/collabs">Anteriores colaboraciones</a>
+                    <a href="/collabs" id="insta-colabos-btn">Saber más</a>
                 </div>
 
-                <a href="#insta-princ">Volver</a>
+                <a href="#insta-princ" id='insta-slider-back' className='insta-slider-btn'>Volver</a>
             </section>
         </section>
     </>

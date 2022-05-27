@@ -1,5 +1,9 @@
 import React from 'react'
-import Spinner from '../Spinner'
+import Spinner from './Spinner'
+import pfp from './img/tok/pfp.jpeg'
+import {FaTiktok} from 'react-icons/fa'
+
+import './styles/tiktokstats.css'
 
 const TiktokStats = () => {
   const [tiktokStats,setTiktokStats] = React.useState('loading')
@@ -19,32 +23,31 @@ const TiktokStats = () => {
   },[])
 
   return (
-    <>
+    <section className="MediaKit" id='tiktokMediaKit'>
+      <section className='tiktokStats-container' id='tokstats-col1'>
+      <img src={pfp} alt="Foto de perfil" title='Lachowski' id='tiktok-media-pfp'/>
+      <a href='https://www.tiktok.com/@lachowski_tutorials' id='tok-link' target='_blank' rel='noreferrer'><FaTiktok/><h3>lachowski_tutorials</h3></a>
     {tiktokStats==='loading' ? 
       
-      <section className='tiktokStats-container'>
-
+      
+        <>
         <div>
-          <Spinner/>
+          <Spinner alt="811.8k"/>
           <p>Seguidores</p>
         </div>
         
         <div>
-          <Spinner/>
-          <p>Likes</p>
+          <Spinner alt='13.85%'/>
+          <p>Engagement</p>
         </div>
-    
-        <div>
-          <Spinner/>
-          <p>Videos</p>
-        </div>
+        </>
       
-      </section>
+      
       
       
       : 
 
-      <section className='tiktokStats-container'>
+      <>
 
         <div>
           <h2>{tiktokStats.followers}</h2>
@@ -61,9 +64,30 @@ const TiktokStats = () => {
           <p>Videos</p>
         </div>
       
-      </section>
+        </>
       }
-    </>
+      <a href="#tokstats-col2" className='insta-slider-btn'>Más datos</a>
+    </section>
+
+    <section className='tiktokStats-container' id='tokstats-col2'>
+      <h2>Audiencia de TikTok</h2>
+      <div className='tok-gender'>
+        <h3>98%</h3>
+        <p>Mujeres</p>
+      </div>
+
+      <div className='tok-geo glassy'>
+        <p>México</p>
+        <h3>34%</h3>
+        <p>Colombia</p>
+        <h3>13%</h3>
+        <p>Argentina</p>
+        <h3>8%</h3>
+        <p>Chile</p>
+        <h3>7%</h3>
+      </div>
+    </section>
+    </section>
   )
 }
 
