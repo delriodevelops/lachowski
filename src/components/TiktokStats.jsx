@@ -86,6 +86,16 @@ const TiktokStats = () => {
         <p>Chile</p>
         <h3>7%</h3>
       </div>
+
+      <div className='tok-mg'>
+        <h3>27.2M</h3>
+        <p>Me gusta</p>
+      </div>
+
+      <div className="tok-views">
+        <h3>4,5M</h3>
+        <p>Visualizaciones mensuales</p>  
+      </div>
     </section>
     </section>
   )
