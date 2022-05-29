@@ -2,6 +2,7 @@ import React from 'react'
 import Spinner from './Spinner'
 import pfp from './img/tok/pfp.jpeg'
 import {FaTiktok} from 'react-icons/fa'
+import PromoItem from './PromoItem'
 
 import './styles/tiktokstats.css'
 
@@ -66,7 +67,7 @@ const TiktokStats = () => {
       
         </>
       }
-      <a href="#tokstats-col2" className='insta-slider-btn'>Más datos</a>
+      <a href="#tokstats-col2" className='slider-btn'>Más datos</a>
     </section>
 
     <section className='tiktokStats-container' id='tokstats-col2'>
@@ -87,15 +88,36 @@ const TiktokStats = () => {
         <h3>7%</h3>
       </div>
 
-      <div className='tok-mg'>
-        <h3>27.2M</h3>
-        <p>Me gusta</p>
-      </div>
 
       <div className="tok-views">
-        <h3>4,5M</h3>
-        <p>Visualizaciones mensuales</p>  
+        <h3>121.1k</h3>
+        <p>Alcance</p>  
       </div>
+      <div className="tok-age glassy">
+        <p>13-17</p>
+        <h3>43%</h3>
+        <p>18-24</p>
+        <h3>43%</h3>
+        <p>25-34</p>
+        <h3>13%</h3>
+        <p>45-54</p>
+        <h3>1%</h3>
+      </div>
+
+
+      <div className="tok-colabs">
+        <h4>Últimas colaboraciones</h4>
+        <ul>
+          <PromoItem post="https://vm.tiktok.com/ZMLoTRMtb/?k=1" name="Shein"/>
+          <PromoItem post="https://vm.tiktok.com/ZMLo3tcK9/?k=1" name='Aliver'/>
+          <li><a rel='noreferrer' href="https://vm.tiktok.com/ZMLo3HAKN/?k=1">Lilysilk</a></li>
+          <li><a rel='noreferrer' href="https://vm.tiktok.com/ZMLo3w1mw/?k=1">Florasis</a></li>
+          <li><a rel='noreferrer' href="ttps://vm.tiktok.com/ZMLo3tyTU/?k=1">Leafinty</a></li>
+        </ul>  
+            <a href="/collabs" className='colabos-btn' rel='noreferrer'>Saber más</a>
+      </div>
+
+      <a href="#tokstats-col1" className='slider-back-btn slider-btn'>Volver</a>
     </section>
     </section>
   )

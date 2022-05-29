@@ -4,6 +4,7 @@
     place-items: center;
     grid-template-columns: 100vw 100vw;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 

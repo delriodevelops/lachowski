@@ -2,6 +2,7 @@ import React from 'react'
 import Spinner from '../Spinner'
 import './style.css'
 import pfp from '../img/Insta/pfp.PNG'
+import PromoItem from '../PromoItem'
 
 import { FaInstagram } from "react-icons/fa";
 
@@ -60,7 +61,7 @@ const InstaStats = () => {
                     <p>Engagement</p>
                 </div>
 
-                <a href="#insta-sec" className='insta-slider-btn'>Más datos</a>
+                <a href="#insta-sec" className='slider-btn'>Más datos</a>
 
             </section>
 
@@ -102,16 +103,16 @@ const InstaStats = () => {
                 <div className="mediakit-insta-collabs">
                     <h4>Últimas colaboraciones</h4>
                     <ul>
-                        <li>Shein</li>
+                        <PromoItem post="https://www.instagram.com/p/CcoMDdHoM2o/?utm_source=ig_web_copy_link" name="Shein"/>
                         <li>Aliexpress</li>
                         <li>Krash Cosmetics</li>
                         <li>Wine Gloss</li>
                         <li>Arenal Sound</li>
                     </ul>
-                    <a href="/collabs" id="insta-colabos-btn">Saber más</a>
+                    <a href="/collabs" className="colabos-btn">Saber más</a>
                 </div>
 
-                <a href="#insta-princ" id='insta-slider-back' className='insta-slider-btn'>Volver</a>
+                <a href="#insta-princ" id='insta-slider-back' className='slider-back-btn slider-btn'>Volver</a>
             </section>
         </section>
     </>

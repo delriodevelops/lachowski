@@ -20,7 +20,7 @@
     border-radius: 16px;
 }
 
-.insta-slider-btn, #insta-colabos-btn {
+.slider-btn, #insta-colabos-btn,.slider-back-btn {
     background: rgba(0, 0, 0, 0.33);
     border: solid 2px rgba(255, 255, 255, .4);
     backdrop-filter: blur(10px);
@@ -38,56 +38,55 @@
     grid-column: 1/3;
 }
 
-.mediakit-insta-collabs {
+.mediakit-insta-collabs, .tok-colabs {
     grid-column: 1 / 3;
     display: grid;
 }
-.mediakit-insta-collabs ul {
+.mediakit-insta-collabs ul, .tok-colabs ul {
     text-align: center;
     padding: 0px;
     list-style: none;
 }
-.mediakit-insta-collabs ul li {
+.mediakit-insta-collabs ul li, .tok-colabs ul li {
     padding: 2px;
 }
 
-.mediakit-insta-collabs h4 {
+.mediakit-insta-collabs h4, .tok-colabs h4 {
     height: fit-content;
     padding: 0;
     margin: 0;
 }
 
 
-#insta-slider-back {
+.slider-back-btn {
     grid-column: 1/3;
 }
 
 
 
-.mediakit-insta-geo, .mediakit-insta-edad, .tok-geo, .tok-edad {
+.mediakit-insta-geo, .mediakit-insta-edad, .tok-geo, .tok-age  {
     display: grid;
     place-items: center;
-    justify-items: start;
+    justify-items: center;
     gap: 0 12px;
     grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding: 0;
 }
 
 .glassy {
     background: rgba(255, 255, 255, .23);
     border: solid 2px rgba(255, 255, 255, .3);
     backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 6px 12px;
+    border-radius: 12px;
 }
 
-.mediakit-insta-edad {
-    padding: 6px 40px;
-}
 
-#insta-colabos-btn {
+.colabos-btn {
     background: rgba(255, 255, 255, .23);
     backdrop-filter: blur(8px);
     border-radius: 6px;
     padding: 12px 12px;
     border: none;
 }
+
