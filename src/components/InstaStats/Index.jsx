@@ -23,7 +23,7 @@ const InstaStats = () => {
             .then(response => response.json())
             .then(response => setInstaStats({followers:response.user.follower_count}))
             .then(response=>console.log(response))
-            .catch(err => console.error(err));
+            .catch(err => console.clear());
       },[])
   return (
     <>
@@ -37,7 +37,7 @@ const InstaStats = () => {
                     <div className='mediakit-insta-seguidores'>
 
                       <div>
-                        <Spinner alt='102.6K'/>
+                        <Spinner alt='103k'/>
                         <p>Seguidores</p>
                       </div>
 
