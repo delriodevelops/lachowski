@@ -4,7 +4,7 @@ import './style.css'
 import pfp from '../img/Insta/pfp.PNG'
 import PromoItem from '../PromoItem'
 
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram ,FaArrowRight} from "react-icons/fa";
 
 
 const InstaStats = () => {
@@ -61,7 +61,7 @@ const InstaStats = () => {
                     <p>Engagement</p>
                 </div>
 
-                <a href="#insta-sec" className='slider-btn'>Más datos</a>
+                <a href="#insta-sec" className='slider-btn'>Más datos <FaArrowRight/></a>
 
             </section>
 

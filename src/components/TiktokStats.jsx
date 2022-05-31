@@ -1,7 +1,7 @@
 import React from 'react'
 import Spinner from './Spinner'
 import pfp from './img/tok/pfp.jpeg'
-import {FaTiktok} from 'react-icons/fa'
+import {FaTiktok,FaArrowRight} from 'react-icons/fa'
 import PromoItem from './PromoItem'
 
 import './styles/tiktokstats.css'
@@ -67,7 +67,7 @@ const TiktokStats = () => {
       
         </>
       }
-      <a href="#tokstats-col2" className='slider-btn'>Más datos</a>
+      <a href="#tokstats-col2" className='slider-btn'>Más datos <FaArrowRight/></a>
     </section>
 
     <section className='tiktokStats-container' id='tokstats-col2'>
