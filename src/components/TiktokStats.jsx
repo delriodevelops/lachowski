@@ -20,7 +20,7 @@ const TiktokStats = () => {
     fetch('https://tiktok-best-experience.p.rapidapi.com/user/lachowski_tutorials', options)
     .then(response => response.json())
     .then(response => setTiktokStats({followers:response.data.follower_count,hearts:response.data.total_favorited,videos:response.data.aweme_count}))
-    .catch(err => console.error(err));
+    .catch(err => console.clear());
   },[])
 
   return (
