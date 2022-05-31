@@ -2,13 +2,6 @@ import React from 'react'
 
 const Contacto = () => {
 
-    const  handleSubmmit = (e)=> {
-        e.preventDefault();
-        const name = document.getElementById('contact-name').value;
-        const msg = document.getElementById('contact-msg').value;
-        console.log(`nombre:${name} mensaje:${msg}`)
-        window.location.replace=`mailto:iamdelrioo@gmail.com?body=${msg}`;
-    }
   return (
     <section className='contact' id='contact'>
         <form action="https://formsubmit.co/1d3206c5a6678acb7be1b24b138319cf" method="POST" >
