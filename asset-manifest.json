@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/lachowski/static/css/main.87d4e356.css",
-    "main.js": "/lachowski/static/js/main.c3ae1e92.js",
+    "main.css": "/lachowski/static/css/main.38557598.css",
+    "main.js": "/lachowski/static/js/main.340ae009.js",
     "static/js/787.ab3f37d8.chunk.js": "/lachowski/static/js/787.ab3f37d8.chunk.js",
     "static/media/spanishdenuncia.png": "/lachowski/static/media/spanishdenuncia.d0da901bb74f7bb01832.png",
     "static/media/pfp.jpeg": "/lachowski/static/media/pfp.646cefac2f76ab615bae.jpeg",
     "static/media/pfp.jpg": "/lachowski/static/media/pfp.281008d5cba3622c2aa9.jpg",
     "index.html": "/lachowski/index.html",
-    "main.87d4e356.css.map": "/lachowski/static/css/main.87d4e356.css.map",
-    "main.c3ae1e92.js.map": "/lachowski/static/js/main.c3ae1e92.js.map",
+    "main.38557598.css.map": "/lachowski/static/css/main.38557598.css.map",
+    "main.340ae009.js.map": "/lachowski/static/js/main.340ae009.js.map",
     "787.ab3f37d8.chunk.js.map": "/lachowski/static/js/787.ab3f37d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d4e356.css",
-    "static/js/main.c3ae1e92.js"
+    "static/css/main.38557598.css",
+    "static/js/main.340ae009.js"
   ]
 }
