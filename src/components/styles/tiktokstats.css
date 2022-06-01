@@ -38,6 +38,6 @@
     place-items: center;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr max-content;
-    gap: 6px;
+    gap: 12px;
     text-transform: uppercase;
 }
