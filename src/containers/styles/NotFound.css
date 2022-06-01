@@ -1,0 +1,17 @@
+.not-found-cont {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+.czc{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    animation: rotation404 4s infinite linear;
+}
+
+@keyframes rotation404 {
+    0% {transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}

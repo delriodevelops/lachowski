@@ -6,6 +6,7 @@ import "./styles/App.css"
 import Home from '../containers/Home'
 
 import Layout from '../components/Layout'
+import NotFound from '../containers/NotFound'
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Layout>
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="*" element={<Home/>}/>
+                <Route path="/*" element={<Home/>}/>
             </Routes>
         </Layout>
     </Router>

@@ -23,10 +23,11 @@ const Footer = () => {
         <div className='footer-links'>
           <p>Tambien te puede interesar</p>
           <ul>
-            <LiCon goto='/cursos'>Cursos</LiCon>
-            <LiCon goto='/'>Home</LiCon>
-            <LiCon goto='/blog'>Blog</LiCon>
-            <LiCon goto='/colaboraciones'>Colaboraciones</LiCon>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href='/'>Home</a></li>
+            <li><a href="/shop">Tienda</a></li>
+            <li><a href='/cursos'>Cursos</a></li>
+            <li><a href="/colaboraciones">Colaboraciones</a></li>            
           </ul>
         </div>
 
