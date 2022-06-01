@@ -89,4 +89,6 @@
     padding: 12px 12px;
     border: none;
 }
-
+.slider-back-btn {
+    text-transform: uppercase;
+}

@@ -10,7 +10,7 @@ const Contacto = () => {
             <div className="form-field form-name">
               <label htmlFor="name">Nombre</label>
               <br/>
-              <input type="text" id='contact-name' name='name' placeholder='Christian del Rio Rodriguez' required minLength="2"/>
+              <input type="text" id='contact-name' name='name' placeholder='Nombre de ejemplo' required minLength="2"/>
             </div>
             <div className="form-mail form-field">
               <label htmlFor="email">E-mail</label>

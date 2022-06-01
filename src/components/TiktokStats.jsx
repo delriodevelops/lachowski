@@ -117,7 +117,7 @@ const TiktokStats = () => {
             <a href="/collabs" className='colabos-btn' rel='noreferrer'>Saber más</a>
       </div>
 
-      <a href="#tokstats-col1" className='slider-back-btn slider-btn'>Volver</a>
+      <a href="#tokstats-col1" className='slider-back-btn'>Volver</a>
     </section>
     </section>
   )

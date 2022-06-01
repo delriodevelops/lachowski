@@ -1,14 +1,14 @@
 import React from 'react'
 import Spinner from '../Spinner'
 import './style.css'
-import pfp from '../img/Insta/pfp.PNG'
+import pfp from '../img/Insta/pfp.jpg'
 import PromoItem from '../PromoItem'
 
 import { FaInstagram ,FaArrowRight} from "react-icons/fa";
 
 
 const InstaStats = () => {
-    const [instaStats,setInstaStats] = React.useState('loading')
+    const [instaStats,setInstaStats] = React.useState('loading')    
 
     React.useEffect(()=>{
         const options = {
@@ -112,7 +112,7 @@ const InstaStats = () => {
                     <a href="/collabs" className="colabos-btn">Saber más</a>
                 </div>
 
-                <a href="#insta-princ" id='insta-slider-back' className='slider-back-btn slider-btn'>Volver</a>
+                <a href="#insta-princ" id='insta-slider-back' className='slider-back-btn'>Volver</a>
             </section>
         </section>
     </>
