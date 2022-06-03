@@ -7,6 +7,8 @@ import Home from '../containers/Home'
 
 import Layout from '../components/Layout'
 import NotFound from '../containers/NotFound'
+import Blog from '../containers/Blog'
+import Writer from '../containers/Writer'
 
 const App = () => {
   return (
@@ -14,7 +16,12 @@ const App = () => {
         <Layout>
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/*" element={<Home/>}/>
+                <Route path="/*" element={<NotFound/>}/>
+                <Route path='blog' >
+                  <Route path='' element={<Blog/>}/>
+                  <Route path='writer' element={<Writer/>}/>
+                </Route>
+                
             </Routes>
         </Layout>
     </Router>
